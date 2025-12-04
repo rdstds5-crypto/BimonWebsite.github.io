@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/jpeg" href="images/logo.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media - Bimon Mulberry Tea</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Sarabun:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <header class="header">
+            <div class="container header-container">
+                <div class="logo-wrapper">
+                    <a href="index.html" class="logo">
+                        <img src="/images/logo.jpg" alt="Bimon Logo" class="logo-img">
+                    </a>
+                    <button class="lang-switch" id="lang-switch-btn" onclick="toggleLanguage()">EN</button>
+                </div>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                        <li><a href="index.html#about" data-i18n="nav_about">About</a></li>
+                        <li><a href="index.html#product" data-i18n="nav_product">Product</a></li>
+                        <li><a href="shop.html" data-i18n="nav_shop">Shop</a></li>
+                        <li><a href="social.html" class="active" data-i18n="nav_social">Social</a></li>
+                        <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section id="social" class="section" style="padding-top: 150px;">
+                <div class="container">
+                    <h2 class="section-title" data-i18n="social_title">Follow Us</h2>
+                    <p class="section-desc" data-i18n="social_desc">Stay updated with our latest news and promotions.
+                    </p>
+
+                    <div class="channels-grid">
+                        <a href="https://web.facebook.com/BimonOfficial/?_rdc=1&_rdr" target="_blank"
+                            class="channel-card facebook">
+                            <div class="channel-icon"><i class="fab fa-facebook-f"></i></div>
+                            <h3>Facebook</h3>
+                            <p>Direct Message</p>
+                            <span class="btn-link"><span data-i18n="social_chat">Chat Now</span> <i
+                                    class="fas fa-arrow-right"></i></span>
+                        </a>
+
+                        <a href="https://www.instagram.com/bimon.official/" target="_blank"
+                            class="channel-card instagram">
+                            <div class="channel-icon"><i class="fab fa-instagram"></i></div>
+                            <h3>Instagram</h3>
+                            <p>Follow Us</p>
+                            <span class="btn-link"><span data-i18n="social_view">View Profile</span> <i
+                                    class="fas fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer-content">
+                <div class="text-gold-premium-end">BIMON THAILAND</div>
+                <p class="copyright" data-i18n="footer_copy">&copy; 2025 Bimon Thailand. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://web.facebook.com/BimonOfficial/?_rdc=1&_rdr" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/bimon.official/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://shopee.co.th/bimonthailand" target="_blank"><i class="fas fa-shopping-bag"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
